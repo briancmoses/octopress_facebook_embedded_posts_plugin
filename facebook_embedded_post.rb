@@ -2,7 +2,7 @@
 # By - Zac Clancy (@zac_c)
 # 
 # Source url: https://github.com/zclancy/octopress_facebook_embedded_posts_plugin
-# Blog post:
+# Blog post: http://blackglasses.me/blog/2013/08/30/facebook-embedded-posts-and-octopress/
 # Facebook embedded post info: https://developers.facebook.com/blog/post/2013/07/31/introducing-embedded-posts/
 # 
 # Syntax: {% facebook_embedded_post url %}
