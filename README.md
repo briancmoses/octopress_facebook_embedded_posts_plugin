@@ -8,15 +8,15 @@ Facebook doesn't let you modify the size of the embedded post at this time, but 
 ## Installation:
 Download the `facebook_embedded_post.rb` file into Octopress's `plugins/` directory within your site.
 
-## Syntax
+## Syntax:
 ```ruby
 {% facebook_embedded_post url %}
 ```
 
-## Examples
+## Examples:
 ```ruby
 {% facebook_embedded_post https://www.facebook.com/FacebookDevelopers/posts/10151471074398553 %}
 ```
 
 ### Contributors
-* [zclancy](https://github.com/zclancy)
+* [Zac Clancy (zclancy)](https://github.com/zclancy)
