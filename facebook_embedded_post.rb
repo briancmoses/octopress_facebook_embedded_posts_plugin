@@ -8,21 +8,21 @@
 # Syntax: {% facebook_embedded_post url %}
 # Example: {% facebook_embedded_post https://www.facebook.com/FacebookDevelopers/posts/10151471074398553 %}
 module Jekyll
-	class FacebookEmbeddedPost < Liquid::Tag
-		def initialize(tag_name, url, tokens)
-			super
-			@post_url = url
-		end
+  class FacebookEmbeddedPost < Liquid::Tag
+    def initialize(tag_name, url, tokens)
+      super
+      @post_url = url
+    end
 
-		def render(context)
-			if @post_url
-				html_output_for @post_url
-			else
-				"Error processing input, expected syntax: {% facebook_embedded_post post_url %}"	
-			end
-		end
+    def render(context)
+      if @post_url
+        html_output_for @post_url
+      else
+        "Error processing input, expected syntax: {% facebook_embedded_post post_url %}"	
+      end
+    end
 
-		def html_output_for(post_url)
+    def html_output_for(post_url)
 <<HTML
 <div id='fb-root'></div>
 <script>(function(d, s, id) {
@@ -34,8 +34,8 @@ module Jekyll
 }(document, 'script', 'facebook-jssdk'));</script>
 <div class='fb-post' data-href='#{post_url}'></div>
 HTML
-		end
-	end
+    end
+  end
 end
 
-Liquid::Template.register_tag('facebook_embedded_post', Jekyll::FacebookEmbeddedPost)		
+Liquid::Template.register_tag('facebook_embedded_post', Jekyll::FacebookEmbeddedPost)			
